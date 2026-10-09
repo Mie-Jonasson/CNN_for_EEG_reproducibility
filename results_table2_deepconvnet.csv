@@ -1,0 +1,2 @@
+dataset,subject,band,accuracy_pct,n_epochs_ran
+BCIC IV 2a,3,4-38,41.31944444444444,4

@@ -1,0 +1,2 @@
+dataset,band,n_subjects,mean_acc_pct,fbcsp_baseline_pct,delta_vs_fbcsp_pct,paper_deep_delta_pct,paper_deep_acc_pct,abs_error_vs_paper_acc_pct
+BCIC IV 2a,4-38,1,41.31944444444444,67.8,-26.480555555555554,2.3,70.1,28.78055555555555
