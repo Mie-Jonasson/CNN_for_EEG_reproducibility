@@ -23,3 +23,7 @@ Notes from TA 2025:
 ✅ In the first tutorial, pip installs work and the code runs. However, the outputs (e.g. the training curves) are not what's shared in the tutorial. 
 
 ✅ MOABB installs and getting started example works
+
+## Report
+
+https://www.overleaf.com/project/6ac8dcb8f771144562b4448a
