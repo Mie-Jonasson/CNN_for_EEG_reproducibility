@@ -1,1 +1,8 @@
 braindecode==1.5
+moabb
+torch
+numpy
+pandas
+scikit-learn
+mne
+skorch
