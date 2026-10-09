@@ -33,8 +33,8 @@ https://www.overleaf.com/project/6ac8dcb8f771144562b4448a
 ## Plan
 
 - [x] Run the tutorial notebook
-- [ ] What are all the links? why do we need the MOABB repo directly? What is the relevance of the "Convolutional neural network regression model on fake data"?
-- [ ] What is the combined dataset?
+- [x] What are all the links? why do we need the MOABB repo directly? What is the relevance of the "Convolutional neural network regression model on fake data"?
+- [x] What is the combined dataset? - script for joining the two datasets: moabb/moabb/datasets/compound_dataset/base.py
 - [ ] Figure out dataset loading using MOABB (BCIC IV 2a, HGD) -> both can be loaded through "braindecode.datasets.BNCI2014_001" and "braindecode.datasets.HGD" (code exists in the tutorial)
 - [ ] Figure out frequency filtering on datasets from 0 or from 4 (code exists in the tutorial)
 - [ ] Figure out the training procedure
