@@ -1,293 +1,312 @@
 #!/usr/bin/env python3
-"""Minimal DeepConvNet (Deep4Net) reproduction of Schirrmeister et al. 2017 Table 2.
+"""Deep ConvNet (Deep4Net) reproduction of Schirrmeister et al. (2017), Table 2.
 
-Paper: https://onlinelibrary.wiley.com/doi/10.1002/hbm.23730
-Tutorial base: braindecode BCIC IV 2a cropped decoding, with Deep4Net instead of Shallow.
+Trains one cropped Deep4Net per dataset, frequency band and subject with the
+paper's two-phase early stopping, and evaluates it once on the test set.
+Section references are to arXiv v5 (https://arxiv.org/abs/1703.05051v5).
 
-Table 2 reports mean decoding accuracy as a delta vs FBCSP. For BCIC IV 2a:
-  0-38 Hz: FBCSP 68.0%, Deep ConvNet +2.9  -> ~70.9%
-  4-38 Hz: FBCSP 67.8%, Deep ConvNet +2.3  -> ~70.1%
+Training:
+- Cropped training (Sec. 2.5.4): crops of 522 samples (~2 s). Each whole
+  trial (1125 samples, -0.5 s to 4 s) goes through the dense-prediction model
+  in one pass, giving 604 crop predictions per trial; the trial prediction is
+  their mean. The paper passes ~1000-sample inputs (~500 crops) instead; since
+  Deep4Net uses unpadded convolutions the crops and their predictions are the
+  same, only grouped differently into forward passes.
+- Loss: per-crop cross-entropy plus the tied sample loss (Sec. 2.5.4, Eq. 3).
+- Optimizer: Adam (Sec. 2.5.5).
+- Two-phase early stopping (Sec. A.4):
+  1. Split the training set into a training and a validation fold. Train on
+     the training fold until validation accuracy has not improved for
+     --max-increase-epochs epochs, or --max-epochs is reached.
+  2. Reset to the parameters with the best validation accuracy and continue on
+     training + validation fold until the validation fold loss drops to the
+     training fold loss at that best epoch.
+- The test set is only used once, after training.
 
-This script trains cropped Deep4Net on BNCI2014_001 (BCIC IV 2a) for those two
-bands, averages over subjects, and prints deltas against the published FBCSP baselines.
+Not stated in the paper; defaults follow the authors' original braindecode
+experiment code: batch size 60, Adam learning rate 1e-3, last 20% of the
+training trials as validation fold, phase 1 for at most 800 epochs with
+patience 80, phase 2 stops at the latest after as many epochs as phase 1's
+best epoch.
 
-Example (smoke test):
-  python reproduce_table2_deepconvnet.py --subjects 3 --bands 4-38 --epochs 4
-
-Full-ish BCIC run (slow on CPU):
-  python reproduce_table2_deepconvnet.py --subjects all --bands both --epochs 100
+Usage:
+  # one dataset/band, some subjects
+  python reproduce_table2_deepconvnet.py train --dataset BCIC_IV_2a --low-cut 4 --subjects 1 2
+  # one of the 46 (dataset, band, subject) runs, e.g. from a Slurm array
+  python reproduce_table2_deepconvnet.py train --job-index 0
+  # Table 2 style summary of all finished runs
+  python reproduce_table2_deepconvnet.py summarize
 """
 
-from __future__ import annotations
-
 import argparse
-import csv
+import copy
+import json
+import time
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 import torch
-from numpy import multiply
-from skorch.callbacks import EarlyStopping, LRScheduler
-from skorch.helper import predefined_split
-
-from braindecode import EEGClassifier
-from braindecode.datasets import MOABBDataset
+import torch.nn.functional as F
 from braindecode.models import Deep4Net
-from braindecode.preprocessing import (
-    Preprocessor,
-    create_windows_from_events,
-    exponential_moving_standardize,
-    preprocess,
-)
-from braindecode.training import CroppedLoss
 from braindecode.util import set_random_seeds
 
-# Published Table 2 baselines / Deep ConvNet deltas (Schirrmeister et al., 2017).
+from data_loading import SUBJECTS, load_dataset, split_train_test
+from preprocessing import create_trial_windows, preprocess_dataset
+
+# Table 2: FBCSP accuracy and Deep ConvNet difference to it, in %
 TABLE2 = {
-    "BCIC IV 2a": {
-        "0-38": {"fbcsp": 68.0, "deep_delta": 2.9},
-        "4-38": {"fbcsp": 67.8, "deep_delta": 2.3},
-    },
+    ("BCIC_IV_2a", 0): (68.0, 2.9),
+    ("BCIC_IV_2a", 4): (67.8, 2.3),
+    ("HGD", 0): (91.2, 1.3),
+    ("HGD", 4): (90.9, 0.5),
+    ("Combined", 0): (82.1, 1.9),
+    ("Combined", 4): (81.9, 1.2),
 }
-
-BANDS = {
-    "0-38": (None, 38.0),  # low-pass only; paper's 0 Hz lower cut
-    "4-38": (4.0, 38.0),
-}
-
-BCIC_SUBJECTS = list(range(1, 10))
-
-
-def parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument(
-        "--subjects",
-        default="3",
-        help="'all' for subjects 1-9, a single id, or comma-separated ids (default: 3).",
-    )
-    p.add_argument(
-        "--bands",
-        choices=("0-38", "4-38", "both"),
-        default="4-38",
-        help="Frequency band(s) from Table 2 (default: 4-38, matches the tutorial).",
-    )
-    p.add_argument("--epochs", type=int, default=100, help="Max training epochs (default: 100).")
-    p.add_argument("--batch-size", type=int, default=64)
-    p.add_argument("--n-times", type=int, default=1000, help="Compute-window length in samples.")
-    p.add_argument("--seed", type=int, default=20200220)
-    p.add_argument(
-        "--out",
-        type=Path,
-        default=Path("results_table2_deepconvnet.csv"),
-        help="CSV path for per-subject results.",
-    )
-    return p.parse_args()
+LOW_CUTS = (0, 4)
+N_CLASSES = 4
+# Input size the model is built for (Sec. 2.5.4: "about 1000 input samples");
+# with final_conv_length=2 this gives crops of 522 samples (~2 s at 250 Hz)
+N_TIMES = 1000
+FINAL_CONV_LENGTH = 2
 
 
-def parse_subjects(spec: str) -> list[int]:
-    if spec.strip().lower() == "all":
-        return BCIC_SUBJECTS
-    return [int(x) for x in spec.split(",") if x.strip()]
-
-
-def pick_session_split(windows_dataset):
-    """Return (train_set, test_set) for BCIC IV 2a session split."""
-    splitted = windows_dataset.split("session")
-    keys = list(splitted.keys())
-
-    def find_key(candidates):
-        for key in keys:
-            low = str(key).lower()
-            if any(c in low for c in candidates):
-                return key
-        return None
-
-    train_key = find_key(("train", "session_t", "0train"))
-    test_key = find_key(("test", "session_e", "1test", "eval"))
-    if train_key is None or test_key is None:
-        if len(keys) == 2:
-            train_key, test_key = keys[0], keys[1]
-        else:
-            raise KeyError(f"Could not resolve train/test sessions from {keys}")
-    return splitted[train_key], splitted[test_key]
-
-
-def load_and_preprocess(subject_id: int, low_cut_hz: float | None, high_cut_hz: float):
-    dataset = MOABBDataset(dataset_name="BNCI2014_001", subject_ids=[subject_id])
-    factor_new = 1e-3
-    init_block_size = 1000
-    factor = 1e6  # V -> uV
-
-    preprocessors = [
-        Preprocessor("pick_types", eeg=True, meg=False, stim=False),
-        Preprocessor(lambda data: multiply(data, factor)),
-        Preprocessor("filter", l_freq=low_cut_hz, h_freq=high_cut_hz),
-        Preprocessor(
-            exponential_moving_standardize,
-            factor_new=factor_new,
-            init_block_size=init_block_size,
-        ),
+def all_jobs():
+    """All (dataset, low cut, subject) runs needed for Table 2."""
+    return [
+        (name, low_cut, subject)
+        for name in ("BCIC_IV_2a", "HGD")
+        for low_cut in LOW_CUTS
+        for subject in SUBJECTS[name]
     ]
-    preprocess(dataset, preprocessors, n_jobs=1)
-    return dataset
 
 
-def train_subject(
-    subject_id: int,
-    band: str,
-    n_epochs: int,
-    batch_size: int,
-    n_times: int,
-    seed: int,
-    device: str,
-    cuda: bool,
-) -> dict:
-    low_cut_hz, high_cut_hz = BANDS[band]
-    set_random_seeds(seed=seed, cuda=cuda)
+def load_trials(name, subject, low_cut_hz):
+    """Preprocessed train and test trials as (X, y) arrays in time order."""
+    dataset = preprocess_dataset(load_dataset(name, [subject]), name, low_cut_hz)
+    train_set, test_set = split_train_test(create_trial_windows(dataset, name))
 
-    dataset = load_and_preprocess(subject_id, low_cut_hz, high_cut_hz)
-    n_chans = dataset[0][0].shape[0]
-    n_classes = 4
-    classes = list(range(n_classes))
+    def to_arrays(windows):
+        X = np.stack([windows[i][0] for i in range(len(windows))])
+        y = np.array([windows[i][1] for i in range(len(windows))])
+        return X.astype(np.float32), y.astype(np.int64)
 
-    # Cropped Deep4Net: small final conv (paper: length 2), then dense predictions.
+    return to_arrays(train_set), to_arrays(test_set)
+
+
+def loss_fn(logits, y, tied_loss):
+    """Mean per-crop cross-entropy, plus the tied sample loss (Eq. 3).
+
+    The tied sample loss is the cross-entropy between the predictions of each
+    pair of neighbouring crops (Sec. 2.5.4).
+    """
+    log_probs = F.log_softmax(logits, dim=1)  # (batch, classes, crops)
+    targets = y[:, None].expand(-1, log_probs.shape[2])
+    loss = F.nll_loss(log_probs, targets)
+    if tied_loss:
+        later_probs = log_probs[:, :, 1:].exp()
+        loss = loss - (later_probs * log_probs[:, :, :-1]).sum(dim=1).mean()
+    return loss
+
+
+def train_epoch(model, optimizer, X, y, args, rng):
+    model.train()
+    for batch in np.array_split(rng.permutation(len(X)), max(1, len(X) // args.batch_size)):
+        batch = torch.as_tensor(batch, device=X.device)
+        optimizer.zero_grad()
+        loss = loss_fn(model(X[batch]), y[batch], args.tied_loss)
+        loss.backward()
+        optimizer.step()
+
+
+@torch.no_grad()
+def evaluate(model, X, y, args):
+    """Loss and trial accuracy (mean of the crop predictions per trial)."""
+    model.eval()
+    losses, correct = [], 0
+    for start in range(0, len(X), args.batch_size):
+        logits = model(X[start:start + args.batch_size])
+        yb = y[start:start + args.batch_size]
+        losses.append(loss_fn(logits, yb, args.tied_loss).item() * len(yb))
+        trial_probs = F.softmax(logits, dim=1).mean(dim=2)
+        correct += (trial_probs.argmax(dim=1) == yb).sum().item()
+    return sum(losses) / len(X), correct / len(X)
+
+
+def train_subject(name, low_cut, subject, args, device):
+    set_random_seeds(seed=args.seed, cuda=device == "cuda")
+    rng = np.random.RandomState(args.seed)
+    (X_train, y_train), (X_test, y_test) = load_trials(name, subject, low_cut)
+
+    # Sec. A.4: split the training set into a training and validation fold
+    n_valid = int(round(len(X_train) * args.valid_fraction))
+    to_tensor = lambda a: torch.as_tensor(a, device=device)
+    X_fit, y_fit = to_tensor(X_train[:-n_valid]), to_tensor(y_train[:-n_valid])
+    X_valid, y_valid = to_tensor(X_train[-n_valid:]), to_tensor(y_train[-n_valid:])
+    X_all, y_all = to_tensor(X_train), to_tensor(y_train)
+    X_test, y_test = to_tensor(X_test), to_tensor(y_test)
+
     model = Deep4Net(
-        n_chans=n_chans,
-        n_outputs=n_classes,
-        n_times=n_times,
-        final_conv_length=2,
+        n_chans=X_train.shape[1],
+        n_outputs=N_CLASSES,
+        n_times=N_TIMES,
+        final_conv_length=FINAL_CONV_LENGTH,
     )
     model.to_dense_prediction_model()
-    n_preds_per_input = model.get_output_shape()[2]
-    if cuda:
-        model = model.cuda()
+    model.to(device)
+    optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
 
-    sfreq = dataset.datasets[0].raw.info["sfreq"]
-    trial_start_offset_samples = int(-0.5 * sfreq)
-    windows_dataset = create_windows_from_events(
-        dataset,
-        trial_start_offset_samples=trial_start_offset_samples,
-        trial_stop_offset_samples=0,
-        window_size_samples=n_times,
-        window_stride_samples=n_preds_per_input,
-        drop_last_window=False,
-        preload=True,
+    history = []
+
+    def log(phase, epoch):
+        train_loss, train_acc = evaluate(model, X_fit, y_fit, args)
+        valid_loss, valid_acc = evaluate(model, X_valid, y_valid, args)
+        history.append(dict(phase=phase, epoch=epoch, train_loss=train_loss,
+                            train_acc=train_acc, valid_loss=valid_loss,
+                            valid_acc=valid_acc))
+        if args.verbose:
+            print(f"  phase {phase} epoch {epoch}: train loss {train_loss:.3f} "
+                  f"acc {train_acc:.3f} | valid loss {valid_loss:.3f} "
+                  f"acc {valid_acc:.3f}", flush=True)
+        return history[-1]
+
+    # Phase 1: train on the training fold until validation accuracy stops
+    # improving, remembering the best parameters
+    best = dict(epoch=0, valid_acc=-1.0)
+    for epoch in range(1, args.max_epochs + 1):
+        train_epoch(model, optimizer, X_fit, y_fit, args, rng)
+        row = log(1, epoch)
+        if row["valid_acc"] > best["valid_acc"]:
+            best = dict(row, model=copy.deepcopy(model.state_dict()),
+                        optimizer=copy.deepcopy(optimizer.state_dict()))
+        if epoch - best["epoch"] >= args.max_increase_epochs:
+            break
+
+    # Phase 2: from the best parameters, train on training + validation fold
+    # until the validation fold loss reaches the training fold loss at the
+    # best epoch
+    model.load_state_dict(best["model"])
+    optimizer.load_state_dict(best["optimizer"])
+    loss_to_reach = best["train_loss"]
+    phase2_epochs = 0
+    for epoch in range(1, best["epoch"] + 1):
+        train_epoch(model, optimizer, X_all, y_all, args, rng)
+        phase2_epochs = epoch
+        if log(2, epoch)["valid_loss"] < loss_to_reach:
+            break
+
+    test_loss, test_acc = evaluate(model, X_test, y_test, args)
+    result = dict(
+        dataset=name, low_cut_hz=low_cut, subject=subject,
+        test_acc=test_acc, test_loss=test_loss,
+        n_train_trials=len(X_train), n_valid_trials=n_valid,
+        n_test_trials=len(X_test),
+        phase1_epochs=len([h for h in history if h["phase"] == 1]),
+        best_epoch=best["epoch"], best_valid_acc=best["valid_acc"],
+        loss_to_reach=loss_to_reach, phase2_epochs=phase2_epochs,
+        args={k: v for k, v in vars(args).items() if k != "func"},
     )
-    train_set, test_set = pick_session_split(windows_dataset)
-
-    # Deep4Net hyperparameters suggested in the braindecode tutorial.
-    lr = 1 * 0.01
-    weight_decay = 0.5 * 0.001
-
-    clf = EEGClassifier(
-        model,
-        cropped=True,
-        criterion=CroppedLoss,
-        criterion__loss_function=torch.nn.functional.cross_entropy,
-        optimizer=torch.optim.AdamW,
-        train_split=predefined_split(test_set),
-        optimizer__lr=lr,
-        optimizer__weight_decay=weight_decay,
-        iterator_train__shuffle=True,
-        batch_size=batch_size,
-        callbacks=[
-            "accuracy",
-            ("lr_scheduler", LRScheduler("CosineAnnealingLR", T_max=max(1, n_epochs - 1))),
-            ("early_stopping", EarlyStopping(patience=10, load_best=True)),
-        ],
-        device=device,
-        classes=classes,
-    )
-    clf.fit(train_set, y=None, epochs=n_epochs)
-
-    # Prefer best validation accuracy from history when early stopping is used.
-    history = clf.history
-    valid_accs = [h["valid_accuracy"] for h in history if "valid_accuracy" in h]
-    test_acc = float(max(valid_accs)) if valid_accs else float(clf.score(test_set, y=None))
-
-    return {
-        "dataset": "BCIC IV 2a",
-        "subject": subject_id,
-        "band": band,
-        "accuracy_pct": 100.0 * test_acc,
-        "n_epochs_ran": len(history),
-    }
+    return result, pd.DataFrame(history)
 
 
-def summarize(rows: list[dict]) -> pd.DataFrame:
+def run_dir(results_dir, name, low_cut):
+    return Path(results_dir) / f"{name}_{low_cut}Hz"
+
+
+def cmd_train(args):
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    if args.job_index is not None:
+        jobs = [all_jobs()[args.job_index]]
+    else:
+        subjects = args.subjects or SUBJECTS[args.dataset]
+        jobs = [(args.dataset, args.low_cut, s) for s in subjects]
+
+    for name, low_cut, subject in jobs:
+        out_dir = run_dir(args.results_dir, name, low_cut)
+        result_path = out_dir / f"subject_{subject:02d}.json"
+        if result_path.exists() and not args.overwrite:
+            print(f"{result_path} exists, skipping")
+            continue
+        print(f"=== {name}, {low_cut}-f_end Hz, subject {subject} ({device}) ===",
+              flush=True)
+        start = time.time()
+        result, history = train_subject(name, low_cut, subject, args, device)
+        result["train_time_s"] = time.time() - start
+        out_dir.mkdir(parents=True, exist_ok=True)
+        history.to_csv(out_dir / f"subject_{subject:02d}_history.csv", index=False)
+        result_path.write_text(json.dumps(result, indent=1))
+        print(f"test accuracy {100 * result['test_acc']:.1f}% (best epoch "
+              f"{result['best_epoch']}, phase 2 epochs {result['phase2_epochs']}, "
+              f"{result['train_time_s'] / 60:.1f} min)", flush=True)
+
+
+def cmd_summarize(args):
+    rows = [json.loads(p.read_text())
+            for p in Path(args.results_dir).glob("*/subject_*.json")]
+    if not rows:
+        print(f"No results in {args.results_dir}")
+        return
     df = pd.DataFrame(rows)
-    summary_rows = []
-    for band, group in df.groupby("band"):
-        mean_acc = group["accuracy_pct"].mean()
-        fbcsp = TABLE2["BCIC IV 2a"][band]["fbcsp"]
-        paper_delta = TABLE2["BCIC IV 2a"][band]["deep_delta"]
-        paper_acc = fbcsp + paper_delta
-        our_delta = mean_acc - fbcsp
-        summary_rows.append(
-            {
-                "dataset": "BCIC IV 2a",
-                "band": band,
-                "n_subjects": len(group),
-                "mean_acc_pct": mean_acc,
-                "fbcsp_baseline_pct": fbcsp,
-                "delta_vs_fbcsp_pct": our_delta,
-                "paper_deep_delta_pct": paper_delta,
-                "paper_deep_acc_pct": paper_acc,
-                "abs_error_vs_paper_acc_pct": abs(mean_acc - paper_acc),
-            }
-        )
-    return pd.DataFrame(summary_rows)
+    per_subject = df.pivot_table(index=["dataset", "subject"], columns="low_cut_hz",
+                                 values="test_acc") * 100
+    print("Test accuracy per subject (%):")
+    print(per_subject.round(1).to_string(), "\n")
 
-
-def main() -> None:
-    args = parse_args()
-    subjects = parse_subjects(args.subjects)
-    bands = list(BANDS) if args.bands == "both" else [args.bands]
-
-    cuda = torch.cuda.is_available()
-    device = "cuda" if cuda else "cpu"
-    if cuda:
-        torch.backends.cudnn.benchmark = True
-
-    print(f"Device: {device}")
-    print(f"Subjects: {subjects}")
-    print(f"Bands: {bands}")
-    print(f"Max epochs: {args.epochs}")
-    print(
-        "Note: early stopping monitors the official test session (tutorial setup). "
-        "This is convenient but not a pure held-out protocol."
-    )
-
-    rows: list[dict] = []
-    for band in bands:
-        for subject_id in subjects:
-            print(f"\n=== subject={subject_id} band={band} ===")
-            row = train_subject(
-                subject_id=subject_id,
-                band=band,
-                n_epochs=args.epochs,
-                batch_size=args.batch_size,
-                n_times=args.n_times,
-                seed=args.seed,
-                device=device,
-                cuda=cuda,
-            )
-            rows.append(row)
-            print(f"accuracy: {row['accuracy_pct']:.1f}%")
-
-    out_df = pd.DataFrame(rows)
-    args.out.parent.mkdir(parents=True, exist_ok=True)
-    out_df.to_csv(args.out, index=False)
-    print(f"\nWrote per-subject results to {args.out}")
-
-    summary = summarize(rows)
-    print("\nTable-2 style summary (Deep ConvNet only):")
-    print(summary.to_string(index=False, float_format=lambda x: f"{x:.2f}"))
-    summary_path = args.out.with_name(args.out.stem + "_summary.csv")
+    summary = []
+    for low_cut in LOW_CUTS:
+        for name in ("BCIC_IV_2a", "HGD", "Combined"):
+            # Combined: mean over the subjects of both datasets (Table 2)
+            names = ("BCIC_IV_2a", "HGD") if name == "Combined" else (name,)
+            accs = df[df.dataset.isin(names) & (df.low_cut_hz == low_cut)].test_acc
+            n_expected = sum(len(SUBJECTS[n]) for n in names)
+            fbcsp, paper_delta = TABLE2[(name, low_cut)]
+            mean_acc = 100 * accs.mean() if len(accs) else np.nan
+            summary.append(dict(
+                dataset=name, band=f"{low_cut}-f_end", subjects=f"{len(accs)}/{n_expected}",
+                acc=mean_acc, paper_acc=fbcsp + paper_delta,
+                delta_vs_fbcsp=mean_acc - fbcsp, paper_delta_vs_fbcsp=paper_delta,
+            ))
+    summary = pd.DataFrame(summary)
+    print("Table 2, Deep ConvNet (%):")
+    print(summary.to_string(index=False, float_format=lambda x: f"{x:.1f}"))
+    summary_path = Path(args.results_dir) / "summary.csv"
     summary.to_csv(summary_path, index=False)
-    print(f"Wrote summary to {summary_path}")
+    df.drop(columns="args").to_csv(Path(args.results_dir) / "per_subject.csv", index=False)
+    print(f"\nWrote {summary_path} and per_subject.csv")
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--results-dir", default="results")
+    sub = parser.add_subparsers(required=True)
+
+    train = sub.add_parser("train", help="train and evaluate subjects")
+    train.set_defaults(func=cmd_train)
+    train.add_argument("--dataset", choices=("BCIC_IV_2a", "HGD"), default="BCIC_IV_2a")
+    train.add_argument("--low-cut", type=int, choices=LOW_CUTS, default=4,
+                       help="0 or 4 Hz, the two frequency ranges of Table 2")
+    train.add_argument("--subjects", type=int, nargs="+",
+                       help="subject ids (default: all of the dataset)")
+    train.add_argument("--job-index", type=int,
+                       help=f"run only job N of the {len(all_jobs())} Table 2 runs "
+                            "(overrides --dataset/--low-cut/--subjects)")
+    train.add_argument("--max-epochs", type=int, default=800)
+    train.add_argument("--max-increase-epochs", type=int, default=80,
+                       help="phase 1 patience in epochs")
+    train.add_argument("--valid-fraction", type=float, default=0.2)
+    train.add_argument("--batch-size", type=int, default=60)
+    train.add_argument("--lr", type=float, default=1e-3)
+    train.add_argument("--no-tied-loss", dest="tied_loss", action="store_false")
+    train.add_argument("--seed", type=int, default=20170629)
+    train.add_argument("--overwrite", action="store_true")
+    train.add_argument("--verbose", action="store_true", help="print every epoch")
+
+    summarize = sub.add_parser("summarize", help="Table 2 style summary")
+    summarize.set_defaults(func=cmd_summarize)
+    return parser.parse_args()
 
 
 if __name__ == "__main__":
-    main()
+    args = parse_args()
+    args.func(args)

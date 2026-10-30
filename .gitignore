@@ -218,5 +218,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
-#data
+
+# Datasets (downloaded by data_loading.py)
 datasets/
+.DS_Store
+
