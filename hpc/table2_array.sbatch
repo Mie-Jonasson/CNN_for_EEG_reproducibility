@@ -8,6 +8,7 @@
 #      .venv/bin/python -c "from data_loading import download; download('BCIC_IV_2a'); download('HGD')"
 #   3. mkdir -p logs && sbatch hpc/table2_array.sbatch
 # Afterwards: .venv/bin/python reproduce_table2_deepconvnet.py summarize
+# Or do all of this in one go with: .venv/bin/python run_all.py
 #
 # TODO: set partition/account and module loads for your cluster.
 #SBATCH --job-name=table2-deep4
@@ -26,4 +27,6 @@ cd "$SLURM_SUBMIT_DIR"
 source .venv/bin/activate
 export MNE_LOGGING_LEVEL=ERROR
 
-python reproduce_table2_deepconvnet.py train --job-index "$SLURM_ARRAY_TASK_ID"
+# Extra arguments (e.g. from run_all.py) are passed on to training
+python reproduce_table2_deepconvnet.py --results-dir "${RESULTS_DIR:-results}" \
+    train --job-index "$SLURM_ARRAY_TASK_ID" "$@"

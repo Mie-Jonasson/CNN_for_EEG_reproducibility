@@ -275,7 +275,7 @@ def cmd_summarize(args):
     print(f"\nWrote {summary_path} and per_subject.csv")
 
 
-def parse_args():
+def parse_args(argv=None):
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--results-dir", default="results")
@@ -304,7 +304,7 @@ def parse_args():
 
     summarize = sub.add_parser("summarize", help="Table 2 style summary")
     summarize.set_defaults(func=cmd_summarize)
-    return parser.parse_args()
+    return parser.parse_args(argv)
 
 
 if __name__ == "__main__":

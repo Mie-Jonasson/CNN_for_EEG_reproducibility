@@ -35,6 +35,15 @@ https://www.overleaf.com/project/6ac8dcb8f771144562b4448a
 `reproduce_table2_deepconvnet.py` trains a cropped Deep4Net per dataset, band and subject with the paper's two-phase early stopping (Sec. A.4) and evaluates once on the test set. Data loading is in `data_loading.py`, preprocessing in `preprocessing.py` (explained in `Preprocessing.ipynb`). See the script's docstring for which settings come from the paper and which are assumptions.
 
 ```bash
+# whole pipeline on the HPC, from the login node: downloads the data, submits
+# the 46 trainings as a Slurm array and a summary job that runs when they finish
+# (extra options are passed to training; finished runs are skipped)
+python run_all.py --sbatch-args="--partition=<gpu partition> --account=<account>"
+# HPC smoke test (1 array task, few epochs)
+python run_all.py --datasets BCIC_IV_2a --low-cuts 4 --subjects 1 --max-epochs 4 --max-increase-epochs 2
+# same pipeline sequentially on this machine
+python run_all.py --local --datasets BCIC_IV_2a --low-cuts 4 --subjects 1 --max-epochs 4 --max-increase-epochs 2
+
 # smoke test (1 subject, few epochs)
 python reproduce_table2_deepconvnet.py train --dataset BCIC_IV_2a --low-cut 4 --subjects 1 --max-epochs 4 --max-increase-epochs 2 --verbose
 
