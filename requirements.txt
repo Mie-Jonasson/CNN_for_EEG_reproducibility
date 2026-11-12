@@ -1,5 +1,5 @@
-braindecode==1.5
-moabb
+braindecode==1.2.0
+moabb==1.4.3
 torch
 numpy
 pandas
