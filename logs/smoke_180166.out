@@ -1,0 +1,11 @@
+Job 180166 on cn16.hpc.itu.dk
+Started Thu Nov 12 17:18:41 CET 2026
+Directory /home/miejo/CNN_for_EEG_reproducibility
+Python /home/miejo/.conda/envs/new_braindecode/bin/python
+Running smoke test: BCIC IV 2a, subject 1, 4 Hz, 4 epochs
+Traceback (most recent call last):
+  File "/home/miejo/CNN_for_EEG_reproducibility/run_all.py", line 17, in <module>
+    import reproduce_table2_deepconvnet as table2
+  File "/home/miejo/CNN_for_EEG_reproducibility/reproduce_table2_deepconvnet.py", line 47, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

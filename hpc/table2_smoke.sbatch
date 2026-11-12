@@ -7,13 +7,14 @@
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=4
 #SBATCH --time=01:00:00
+#SBATCH --mem=16G
 #SBATCH --output=logs/smoke_%j.out
 ##SBATCH --partition=scavenge
 
 set -euo pipefail
 
 module load Anaconda3
-conda activate braindecode
+source activate new_braindecode
 export MNE_LOGGING_LEVEL=ERROR
 
 echo "Job ${SLURM_JOB_ID} on $(hostname)"

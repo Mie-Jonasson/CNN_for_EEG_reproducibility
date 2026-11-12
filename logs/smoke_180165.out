@@ -1,0 +1,16 @@
+no change     /opt/itu/easybuild/software/Anaconda3/2025.06-1/condabin/conda
+no change     /opt/itu/easybuild/software/Anaconda3/2025.06-1/bin/conda
+no change     /opt/itu/easybuild/software/Anaconda3/2025.06-1/bin/conda-env
+no change     /opt/itu/easybuild/software/Anaconda3/2025.06-1/bin/activate
+no change     /opt/itu/easybuild/software/Anaconda3/2025.06-1/bin/deactivate
+no change     /opt/itu/easybuild/software/Anaconda3/2025.06-1/etc/profile.d/conda.sh
+no change     /opt/itu/easybuild/software/Anaconda3/2025.06-1/etc/fish/conf.d/conda.fish
+no change     /opt/itu/easybuild/software/Anaconda3/2025.06-1/shell/condabin/Conda.psm1
+no change     /opt/itu/easybuild/software/Anaconda3/2025.06-1/shell/condabin/conda-hook.ps1
+no change     /opt/itu/easybuild/software/Anaconda3/2025.06-1/lib/python3.13/site-packages/xontrib/conda.xsh
+no change     /opt/itu/easybuild/software/Anaconda3/2025.06-1/etc/profile.d/conda.csh
+no change     /home/miejo/.bashrc
+No action taken.
+
+CondaError: Run 'conda init' before 'conda activate'
+
