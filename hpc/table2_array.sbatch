@@ -1,32 +1,30 @@
 #!/bin/bash
-# Slurm job array running all 46 Table 2 trainings, one (dataset, band,
-# subject) per task: indices 0-17 are BCIC IV 2a, 18-45 HGD.
+# One Slurm job that runs the whole Table 2 pipeline on this node.
 #
-# Before submitting, from the project folder on the login node:
-#   1. python -m venv .venv && .venv/bin/pip install -r requirements.txt
-#   2. Download the data (compute nodes may have no internet):
-#      .venv/bin/python -c "from data_loading import download; download('BCIC_IV_2a'); download('HGD')"
-#   3. mkdir -p logs && sbatch hpc/table2_array.sbatch
-# Afterwards: .venv/bin/python reproduce_table2_deepconvnet.py summarize
-# Or do all of this in one go with: .venv/bin/python run_all.py
+#   mkdir -p logs && sbatch hpc/table2_array.sbatch
 #
-# TODO: set partition/account and module loads for your cluster.
-#SBATCH --job-name=table2-deep4
-#SBATCH --array=0-45
+# Extra arguments are passed to run_all.py, for example:
+#   sbatch hpc/table2_array.sbatch --datasets BCIC_IV_2a --low-cuts 4 --subjects 1 --max-epochs 4
+#
+#SBATCH --job-name=table2-deep4-eeg-cnn-reproduce
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=4
-#SBATCH --mem=16G
 #SBATCH --time=06:00:00
-#SBATCH --output=logs/%x_%A_%a.out
-##SBATCH --partition=<gpu partition>
-##SBATCH --account=<account>
+#SBATCH --output=logs/job_%j.out
+##SBATCH --partition=scavenge
 
 set -euo pipefail
-cd "$SLURM_SUBMIT_DIR"
-# module load <python/cuda modules>
-source .venv/bin/activate
+
+module load Anaconda3
+conda activate braindecode
 export MNE_LOGGING_LEVEL=ERROR
 
-# Extra arguments (e.g. from run_all.py) are passed on to training
-python reproduce_table2_deepconvnet.py --results-dir "${RESULTS_DIR:-results}" \
-    train --job-index "$SLURM_ARRAY_TASK_ID" "$@"
+echo "Job ${SLURM_JOB_ID} on $(hostname)"
+echo "Started $(date)"
+echo "Directory $(pwd)"
+echo "Python $(command -v python)"
+echo "Running: python run_all.py $*"
+
+python run_all.py "$@"
+
+echo "Finished $(date)"
