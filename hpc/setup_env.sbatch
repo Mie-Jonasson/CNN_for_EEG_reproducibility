@@ -10,11 +10,8 @@
 echo "Running on $(hostname):"
 module load Anaconda3
 source activate new_braindecode
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 pip install -r requirements.txt
-# requirements.txt leaves an already-installed torch alone. This driver is
-# CUDA 12.6, so replace whatever wheel is there with the matching build.
-pip install --force-reinstall "torch==2.14.1" \
-    --index-url https://download.pytorch.org/whl/cu126
 
 # Verify install
 python -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.is_available())"
