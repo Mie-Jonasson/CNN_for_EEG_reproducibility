@@ -4,7 +4,7 @@
 #   mkdir -p logs && sbatch hpc/table2_smoke.sbatch
 #
 #SBATCH --job-name=table2-smoke
-#SBATCH --gres=gpu:v100:1
+#SBATCH --gres=gpu:rtx2070:1
 #SBATCH --cpus-per-task=4
 #SBATCH --time=01:00:00
 #SBATCH --mem=16G

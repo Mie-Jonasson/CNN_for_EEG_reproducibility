@@ -7,7 +7,7 @@
 #   sbatch hpc/table2_array.sbatch --datasets BCIC_IV_2a --low-cuts 4 --subjects 1 --max-epochs 4
 #
 #SBATCH --job-name=table2-deep4-eeg-cnn-reproduce
-#SBATCH --gres=gpu:v100:1
+#SBATCH --gres=gpu:rtx2070:1
 #SBATCH --cpus-per-task=4
 #SBATCH --time=06:00:00
 #SBATCH --mem=16G
