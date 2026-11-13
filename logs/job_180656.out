@@ -1,0 +1,1248 @@
+Job 180656 on desktop6.hpc.itu.dk
+Started Fri Nov 13 14:16:45 CET 2026
+Directory /home/miejo/CNN_for_EEG_reproducibility
+Python /home/miejo/.conda/envs/new_braindecode/bin/python
+Running: python run_all.py --overwrite
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+BCIC_IV_2a subject 1: ok
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+BCIC_IV_2a subject 2: ok
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+BCIC_IV_2a subject 3: ok
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+BCIC_IV_2a subject 4: ok
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+BCIC_IV_2a subject 5: ok
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+BCIC_IV_2a subject 6: ok
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+BCIC_IV_2a subject 7: ok
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+BCIC_IV_2a subject 8: ok
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+BCIC_IV_2a subject 9: ok
+HGD subject 1: fetching train from NEMAR
+HGD subject 1: fetching test from NEMAR
+HGD subject 1: ok
+HGD subject 2: fetching train from NEMAR
+HGD subject 2: fetching test from NEMAR
+HGD subject 2: ok
+HGD subject 3: fetching train from NEMAR
+HGD subject 3: fetching test from NEMAR
+HGD subject 3: ok
+HGD subject 4: fetching train from NEMAR
+HGD subject 4: fetching test from NEMAR
+HGD subject 4: ok
+HGD subject 5: fetching train from NEMAR
+HGD subject 5: fetching test from NEMAR
+HGD subject 5: ok
+HGD subject 6: fetching train from NEMAR
+HGD subject 6: fetching test from NEMAR
+HGD subject 6: ok
+HGD subject 7: fetching train from NEMAR
+HGD subject 7: fetching test from NEMAR
+HGD subject 7: ok
+HGD subject 8: fetching train from NEMAR
+HGD subject 8: fetching test from NEMAR
+HGD subject 8: ok
+HGD subject 9: fetching train from NEMAR
+HGD subject 9: fetching test from NEMAR
+HGD subject 9: ok
+HGD subject 10: fetching train from NEMAR
+HGD subject 10: fetching test from NEMAR
+HGD subject 10: ok
+HGD subject 11: fetching train from NEMAR
+HGD subject 11: fetching test from NEMAR
+HGD subject 11: ok
+HGD subject 12: fetching train from NEMAR
+HGD subject 12: fetching test from NEMAR
+HGD subject 12: ok
+HGD subject 13: fetching train from NEMAR
+HGD subject 13: fetching test from NEMAR
+HGD subject 13: ok
+HGD subject 14: fetching train from NEMAR
+HGD subject 14: fetching test from NEMAR
+HGD subject 14: ok
+
+=== BCIC_IV_2a 0-fend Hz ===
+=== BCIC_IV_2a, 0-f_end Hz, subject 1 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 86.1% (best epoch 301, phase 2 epochs 110, 1.5 min)
+=== BCIC_IV_2a, 0-f_end Hz, subject 2 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 52.8% (best epoch 238, phase 2 epochs 75, 1.2 min)
+=== BCIC_IV_2a, 0-f_end Hz, subject 3 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 90.3% (best epoch 131, phase 2 epochs 64, 0.9 min)
+=== BCIC_IV_2a, 0-f_end Hz, subject 4 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 55.6% (best epoch 90, phase 2 epochs 35, 0.7 min)
+=== BCIC_IV_2a, 0-f_end Hz, subject 5 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 47.9% (best epoch 266, phase 2 epochs 86, 1.3 min)
+=== BCIC_IV_2a, 0-f_end Hz, subject 6 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 57.6% (best epoch 261, phase 2 epochs 87, 1.3 min)
+=== BCIC_IV_2a, 0-f_end Hz, subject 7 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 88.5% (best epoch 223, phase 2 epochs 62, 1.1 min)
+=== BCIC_IV_2a, 0-f_end Hz, subject 8 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 79.5% (best epoch 274, phase 2 epochs 109, 1.5 min)
+=== BCIC_IV_2a, 0-f_end Hz, subject 9 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 83.7% (best epoch 284, phase 2 epochs 96, 1.4 min)
+
+=== BCIC_IV_2a 4-fend Hz ===
+=== BCIC_IV_2a, 4-f_end Hz, subject 1 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 85.1% (best epoch 356, phase 2 epochs 136, 1.8 min)
+=== BCIC_IV_2a, 4-f_end Hz, subject 2 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 47.6% (best epoch 478, phase 2 epochs 294, 2.7 min)
+=== BCIC_IV_2a, 4-f_end Hz, subject 3 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 83.3% (best epoch 156, phase 2 epochs 74, 1.0 min)
+=== BCIC_IV_2a, 4-f_end Hz, subject 4 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 71.2% (best epoch 285, phase 2 epochs 132, 1.6 min)
+=== BCIC_IV_2a, 4-f_end Hz, subject 5 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 33.0% (best epoch 381, phase 2 epochs 201, 2.1 min)
+=== BCIC_IV_2a, 4-f_end Hz, subject 6 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 43.1% (best epoch 91, phase 2 epochs 34, 0.7 min)
+=== BCIC_IV_2a, 4-f_end Hz, subject 7 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 86.1% (best epoch 193, phase 2 epochs 80, 1.1 min)
+=== BCIC_IV_2a, 4-f_end Hz, subject 8 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 74.7% (best epoch 33, phase 2 epochs 33, 0.5 min)
+=== BCIC_IV_2a, 4-f_end Hz, subject 9 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/moabb/datasets/bnci.py:666: FutureWarning: Montage name 'standard_1005' is deprecated and will be removed in MNE 1.14. Use 'colin27_1005' instead.
+  montage = make_standard_montage("standard_1005")
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 81.2% (best epoch 70, phase 2 epochs 52, 0.7 min)
+
+=== HGD 0-fend Hz ===
+=== HGD, 0-f_end Hz, subject 1 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 97.5% (best epoch 111, phase 2 epochs 25, 0.9 min)
+=== HGD, 0-f_end Hz, subject 2 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 90.6% (best epoch 143, phase 2 epochs 73, 3.0 min)
+=== HGD, 0-f_end Hz, subject 3 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 98.8% (best epoch 184, phase 2 epochs 86, 3.7 min)
+=== HGD, 0-f_end Hz, subject 4 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 98.8% (best epoch 246, phase 2 epochs 61, 4.2 min)
+=== HGD, 0-f_end Hz, subject 5 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 98.1% (best epoch 142, phase 2 epochs 44, 2.4 min)
+=== HGD, 0-f_end Hz, subject 6 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 89.4% (best epoch 233, phase 2 epochs 74, 4.0 min)
+=== HGD, 0-f_end Hz, subject 7 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 90.0% (best epoch 109, phase 2 epochs 27, 2.4 min)
+=== HGD, 0-f_end Hz, subject 8 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 95.0% (best epoch 237, phase 2 epochs 114, 3.3 min)
+=== HGD, 0-f_end Hz, subject 9 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 96.9% (best epoch 61, phase 2 epochs 25, 2.0 min)
+=== HGD, 0-f_end Hz, subject 10 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 87.5% (best epoch 135, phase 2 epochs 59, 2.8 min)
+=== HGD, 0-f_end Hz, subject 11 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 94.4% (best epoch 124, phase 2 epochs 48, 2.8 min)
+=== HGD, 0-f_end Hz, subject 12 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 96.2% (best epoch 121, phase 2 epochs 36, 2.6 min)
+=== HGD, 0-f_end Hz, subject 13 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 90.0% (best epoch 137, phase 2 epochs 57, 2.7 min)
+=== HGD, 0-f_end Hz, subject 14 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 71.2% (best epoch 107, phase 2 epochs 25, 2.4 min)
+
+=== HGD 4-fend Hz ===
+=== HGD, 4-f_end Hz, subject 1 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 91.9% (best epoch 89, phase 2 epochs 29, 0.9 min)
+=== HGD, 4-f_end Hz, subject 2 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 88.1% (best epoch 176, phase 2 epochs 111, 3.6 min)
+=== HGD, 4-f_end Hz, subject 3 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 98.8% (best epoch 91, phase 2 epochs 26, 2.3 min)
+=== HGD, 4-f_end Hz, subject 4 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 99.4% (best epoch 34, phase 2 epochs 7, 1.6 min)
+=== HGD, 4-f_end Hz, subject 5 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 98.8% (best epoch 66, phase 2 epochs 22, 1.6 min)
+=== HGD, 4-f_end Hz, subject 6 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 95.0% (best epoch 114, phase 2 epochs 61, 2.8 min)
+=== HGD, 4-f_end Hz, subject 7 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 93.1% (best epoch 130, phase 2 epochs 59, 2.9 min)
+=== HGD, 4-f_end Hz, subject 8 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 93.1% (best epoch 228, phase 2 epochs 125, 3.4 min)
+=== HGD, 4-f_end Hz, subject 9 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 96.2% (best epoch 123, phase 2 epochs 52, 2.8 min)
+=== HGD, 4-f_end Hz, subject 10 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 92.5% (best epoch 155, phase 2 epochs 104, 3.5 min)
+=== HGD, 4-f_end Hz, subject 11 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 93.1% (best epoch 180, phase 2 epochs 61, 3.4 min)
+=== HGD, 4-f_end Hz, subject 12 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 98.1% (best epoch 61, phase 2 epochs 19, 1.9 min)
+=== HGD, 4-f_end Hz, subject 13 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 96.2% (best epoch 217, phase 2 epochs 90, 3.7 min)
+=== HGD, 4-f_end Hz, subject 14 (cuda) ===
+/home/miejo/.conda/envs/new_braindecode/lib/python3.12/site-packages/braindecode/preprocessing/preprocess.py:71: UserWarning: Preprocessing choices with lambda functions cannot be saved.
+  warn("Preprocessing choices with lambda functions cannot be saved.")
+test accuracy 68.8% (best epoch 198, phase 2 epochs 50, 3.5 min)
+Test accuracy per subject (%):
+low_cut_hz             0     4
+dataset    subject            
+BCIC_IV_2a 1        86.1  85.1
+           2        52.8  47.6
+           3        90.3  83.3
+           4        55.6  71.2
+           5        47.9  33.0
+           6        57.6  43.1
+           7        88.5  86.1
+           8        79.5  74.7
+           9        83.7  81.2
+HGD        1        97.5  91.9
+           2        90.6  88.1
+           3        98.8  98.8
+           4        98.8  99.4
+           5        98.1  98.8
+           6        89.4  95.0
+           7        90.0  93.1
+           8        95.0  93.1
+           9        96.9  96.2
+           10       87.5  92.5
+           11       94.4  93.1
+           12       96.2  98.1
+           13       90.0  96.2
+           14       71.2  68.8 
+
+Table 2, Deep ConvNet (%):
+   dataset    band subjects  acc  paper_acc  delta_vs_fbcsp  paper_delta_vs_fbcsp
+BCIC_IV_2a 0-f_end      9/9 71.3       70.9             3.3                   2.9
+       HGD 0-f_end    14/14 92.5       92.5             1.3                   1.3
+  Combined 0-f_end    23/23 84.2       84.0             2.1                   1.9
+BCIC_IV_2a 4-f_end      9/9 67.2       70.1            -0.6                   2.3
+       HGD 4-f_end    14/14 93.1       91.4             2.2                   0.5
+  Combined 4-f_end    23/23 83.0       83.1             1.1                   1.2
+
+Wrote results/summary.csv and per_subject.csv
+Wall clock 2:02:01
+Finished Fri Nov 13 16:19:14 CET 2026
+Wall clock 2:02:32

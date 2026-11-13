@@ -16,9 +16,13 @@ data, but the subject-weighted mean over all 9 + 14 = 23 subjects, e.g.
 FBCSP (9 * 68.0 + 14 * 91.2) / 23 = 82.1. See ``combined_accuracy``.
 """
 
+import json
 import os
+import time
 from pathlib import Path
+from urllib.parse import urlparse
 
+import requests
 from braindecode.datasets import MOABBDataset
 
 # Store data in the project instead of ~/mne_data. Environment variables take
@@ -36,6 +40,16 @@ SUBJECTS = {
     "BCIC_IV_2a": list(range(1, 10)),
     "HGD": list(range(1, 15)),
 }
+# MOABB requests this URL. GIN redirects it and often answers 503.
+HGD_GIN = "https://web.gin.g-node.org/robintibor/high-gamma-dataset/raw/master/data"
+# Same EDFs, hosted by NEMAR (dataset nm000172, version 1.0.3).
+HGD_NEMAR = "https://data.nemar.org/nm000172/v1.0.3/sourcedata"
+# Smallest NEMAR test file is about 154 MB. Anything smaller is a failed download.
+HGD_MIN_BYTES = 100 * 1024 * 1024
+_DEBUG_LOG = Path(
+    "/Users/jonasson/Documents/MSc Computer Science/ComputerScienceMasters"
+    "/SeminarsInDataScience/CNN_for_EEG_reproducibility/.cursor/debug-a802bb.log"
+)
 
 
 def load_dataset(name, subject_ids=None):
@@ -55,26 +69,125 @@ def load_dataset(name, subject_ids=None):
     return MOABBDataset(dataset_name=DATASETS[name], subject_ids=subject_ids)
 
 
+def _agent_log(hypothesis_id, message, data):
+    # region agent log
+    record = {
+        "sessionId": "a802bb",
+        "hypothesisId": hypothesis_id,
+        "location": "data_loading.py",
+        "message": message,
+        "data": data,
+        "timestamp": int(time.time() * 1000),
+    }
+    try:
+        with _DEBUG_LOG.open("a") as handle:
+            handle.write(json.dumps(record) + "\n")
+    except OSError:
+        pass
+    # endregion
+
+
+def _hgd_cache_path(kind, subject):
+    """Path pooch uses for MOABB's GIN url. A file here skips the GIN download."""
+    url = f"{HGD_GIN}/{kind}/{subject}.edf"
+    relative = urlparse(url).path.lstrip("/")
+    return DATA_DIR / "MNE-schirrmeister2017-data" / relative
+
+
+def _hgd_final_path(kind, subject):
+    return DATA_DIR / "MNE-schirrmeister2017-data" / kind / f"{subject}.edf"
+
+
+def _complete(path):
+    return path.is_file() and path.stat().st_size >= HGD_MIN_BYTES
+
+
+def _fetch_url(url, dest):
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    partial = dest.with_suffix(dest.suffix + ".part")
+    with requests.get(url, stream=True, timeout=(30, 120)) as response:
+        response.raise_for_status()
+        with partial.open("wb") as handle:
+            for chunk in response.iter_content(chunk_size=1024 * 1024):
+                if chunk:
+                    handle.write(chunk)
+    size = partial.stat().st_size
+    if size < HGD_MIN_BYTES:
+        partial.unlink(missing_ok=True)
+        raise RuntimeError(f"short file from {url} ({size} bytes)")
+    partial.replace(dest)
+    return size
+
+
+def _ensure_hgd_subject(subject):
+    """Put train and test EDFs where MOABB looks, using the NEMAR mirror."""
+    for kind in ("train", "test"):
+        final = _hgd_final_path(kind, subject)
+        cache = _hgd_cache_path(kind, subject)
+        url = f"{HGD_NEMAR}/{kind}/{subject}.edf"
+        if not _complete(final):
+            print(f"HGD subject {subject}: fetching {kind} from NEMAR", flush=True)
+            size = _fetch_url(url, final)
+        else:
+            size = final.stat().st_size
+        # A partial GIN download must not be treated as a finished file.
+        if cache.exists() and not _complete(cache):
+            cache.unlink()
+        if not _complete(cache):
+            cache.parent.mkdir(parents=True, exist_ok=True)
+            if cache.exists() or cache.is_symlink():
+                cache.unlink()
+            cache.symlink_to(final)
+        _agent_log(
+            "A",
+            "hgd file ready",
+            {
+                "subject": subject,
+                "kind": kind,
+                "bytes": size,
+                "final": str(final),
+                "cache": str(cache),
+                "cache_is_link": cache.is_symlink(),
+            },
+        )
+
+
 def download(name, subject_ids=None, max_attempts=10):
     """Download subjects into the MOABB cache, retrying failed downloads.
 
-    The HGD server (G-Node GIN) is slow and MOABB gives up after a 30 s read
-    timeout, so retry each subject until it is cached. Files that are already
-    cached are not downloaded again.
+    HGD is fetched from the NEMAR mirror. GIN, the host MOABB requests,
+    answers 503 for these files. A symlink keeps the mirror file on the path
+    pooch checks, so a later training run does not call GIN again.
     """
     if subject_ids is None:
         subject_ids = SUBJECTS[name]
     for subject in subject_ids:
         for attempt in range(1, max_attempts + 1):
             try:
+                if name == "HGD":
+                    _ensure_hgd_subject(subject)
                 load_dataset(name, [subject])
                 print(f"{name} subject {subject}: ok", flush=True)
+                _agent_log("B", "subject loaded", {"name": name, "subject": subject})
                 break
             except Exception as exc:
                 print(f"{name} subject {subject}: attempt {attempt} failed ({exc})",
                       flush=True)
-        else:
-            raise RuntimeError(f"Could not download {name} subject {subject}")
+                _agent_log(
+                    "C",
+                    "download attempt failed",
+                    {
+                        "name": name,
+                        "subject": subject,
+                        "attempt": attempt,
+                        "error": f"{type(exc).__name__}: {exc}",
+                    },
+                )
+                if attempt == max_attempts:
+                    raise RuntimeError(
+                        f"Could not download {name} subject {subject}"
+                    ) from exc
+                time.sleep(min(60, 5 * attempt))
 
 
 def split_train_test(dataset):
