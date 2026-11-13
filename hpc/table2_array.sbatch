@@ -18,7 +18,7 @@ set -euo pipefail
 trap 'printf "Wall clock %d:%02d:%02d\n" $((SECONDS/3600)) $((SECONDS%3600/60)) $((SECONDS%60))' EXIT
 
 module load Anaconda3
-conda activate new_braindecode
+source activate new_braindecode
 export MNE_LOGGING_LEVEL=ERROR
 
 echo "Job ${SLURM_JOB_ID} on $(hostname)"
