@@ -9,9 +9,23 @@
 #SBATCH --mail-type=BEGIN,FAIL,END
 echo "Running on $(hostname):"
 module load Anaconda3
-source activate new_braindecode
-conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
-pip install -r requirements.txt
 
-# Verify install
+echo "Removing existing environment..."
+conda env remove -n new_braindecode -y
+
+echo "Creating new environment with Pytorch-CUDA 11.8..."
+conda create -y -n new_braindecode python=3.10 \
+    pytorch torchvision torchaudio pytorch-cuda=11.8 \
+    -c pytorch -c nvidia \
+    --override-channels --strict-channel-priority
+
+echo "Activating new environment..."
+conda activate new_braindecode
+
+echo "Installing additional requirements..."
+pip install --upgrade-strategy only-if-needed -r requirements.txt
+
+echo "Verifying installation..."
 python -c "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.is_available())"
+
+echo "Installation complete!"
