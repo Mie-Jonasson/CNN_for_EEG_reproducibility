@@ -1,0 +1,32 @@
+{
+ "dataset": "HGD",
+ "low_cut_hz": 0,
+ "subject": 14,
+ "test_acc": 0.7125,
+ "test_loss": 6.404113531112671,
+ "n_train_trials": 880,
+ "n_valid_trials": 176,
+ "n_test_trials": 160,
+ "phase1_epochs": 187,
+ "best_epoch": 107,
+ "best_valid_acc": 1.0,
+ "loss_to_reach": 0.026032603763848205,
+ "phase2_epochs": 25,
+ "args": {
+  "results_dir": "results",
+  "dataset": "HGD",
+  "low_cut": 0,
+  "subjects": null,
+  "job_index": null,
+  "max_epochs": 800,
+  "max_increase_epochs": 80,
+  "valid_fraction": 0.2,
+  "batch_size": 60,
+  "lr": 0.001,
+  "tied_loss": true,
+  "seed": 20170629,
+  "overwrite": true,
+  "verbose": false
+ },
+ "train_time_s": 142.34826254844666
+}

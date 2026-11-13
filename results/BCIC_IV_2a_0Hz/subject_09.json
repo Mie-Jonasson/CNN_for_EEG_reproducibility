@@ -1,0 +1,32 @@
+{
+ "dataset": "BCIC_IV_2a",
+ "low_cut_hz": 0,
+ "subject": 9,
+ "test_acc": 0.8368055555555556,
+ "test_loss": 1.1479550376534462,
+ "n_train_trials": 288,
+ "n_valid_trials": 58,
+ "n_test_trials": 288,
+ "phase1_epochs": 364,
+ "best_epoch": 284,
+ "best_valid_acc": 0.8448275862068966,
+ "loss_to_reach": 0.02189068949740866,
+ "phase2_epochs": 96,
+ "args": {
+  "results_dir": "results",
+  "dataset": "BCIC_IV_2a",
+  "low_cut": 0,
+  "subjects": null,
+  "job_index": null,
+  "max_epochs": 800,
+  "max_increase_epochs": 80,
+  "valid_fraction": 0.2,
+  "batch_size": 60,
+  "lr": 0.001,
+  "tied_loss": true,
+  "seed": 20170629,
+  "overwrite": true,
+  "verbose": false
+ },
+ "train_time_s": 86.14721655845642
+}
