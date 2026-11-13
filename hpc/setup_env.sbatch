@@ -10,8 +10,8 @@
 echo "Running on $(hostname):"
 module load Anaconda3
 
-echo "Removing existing environment..."
-conda env remove -n new_braindecode -y
+echo "Removing existing environment if it exists..."
+conda env remove -n new_braindecode -y || true
 
 echo "Creating new environment with Pytorch-CUDA 11.8..."
 conda create -y -n new_braindecode python=3.10 \
