@@ -15,6 +15,7 @@
 ##SBATCH --partition=scavenge
 
 set -euo pipefail
+trap 'printf "Wall clock %d:%02d:%02d\n" $((SECONDS/3600)) $((SECONDS%3600/60)) $((SECONDS%60))' EXIT
 
 module load Anaconda3
 conda activate new_braindecode

@@ -13,12 +13,21 @@ Options not listed below are passed on to training.
 """
 
 import argparse
+import time
 
 import reproduce_table2_deepconvnet as table2
 from data_loading import download
 
 
+def format_wall(seconds):
+    total = int(round(seconds))
+    hours, rem = divmod(total, 3600)
+    minutes, secs = divmod(rem, 60)
+    return f"{hours}:{minutes:02d}:{secs:02d}"
+
+
 def main():
+    started = time.perf_counter()
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--datasets", nargs="+", choices=("BCIC_IV_2a", "HGD"),
@@ -31,21 +40,24 @@ def main():
     parser.add_argument("--skip-download", action="store_true")
     args, train_extra = parser.parse_known_args()
 
-    if not args.skip_download:
+    try:
+        if not args.skip_download:
+            for name in args.datasets:
+                download(name, args.subjects)
+
         for name in args.datasets:
-            download(name, args.subjects)
+            for low_cut in args.low_cuts:
+                argv = ["--results-dir", args.results_dir, "train",
+                        "--dataset", name, "--low-cut", str(low_cut), *train_extra]
+                if args.subjects:
+                    argv += ["--subjects", *map(str, args.subjects)]
+                print(f"\n=== {name} {low_cut}-fend Hz ===", flush=True)
+                table2.cmd_train(table2.parse_args(argv))
 
-    for name in args.datasets:
-        for low_cut in args.low_cuts:
-            argv = ["--results-dir", args.results_dir, "train",
-                    "--dataset", name, "--low-cut", str(low_cut), *train_extra]
-            if args.subjects:
-                argv += ["--subjects", *map(str, args.subjects)]
-            print(f"\n=== {name} {low_cut}-fend Hz ===", flush=True)
-            table2.cmd_train(table2.parse_args(argv))
-
-    table2.cmd_summarize(table2.parse_args(
-        ["--results-dir", args.results_dir, "summarize"]))
+        table2.cmd_summarize(table2.parse_args(
+            ["--results-dir", args.results_dir, "summarize"]))
+    finally:
+        print(f"Wall clock {format_wall(time.perf_counter() - started)}", flush=True)
 
 
 if __name__ == "__main__":
