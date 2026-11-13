@@ -9,7 +9,7 @@
 #SBATCH --job-name=table2-deep4-eeg-cnn-reproduce
 #SBATCH --gres=gpu:rtx2070:1
 #SBATCH --cpus-per-task=4
-#SBATCH --time=06:00:00
+#SBATCH --time=10:00:00
 #SBATCH --mem=16G
 #SBATCH --output=logs/job_%j.out
 ##SBATCH --partition=scavenge
